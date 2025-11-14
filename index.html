@@ -1,0 +1,30 @@
+---
+layout: default 
+title: Diario de Desarrollo
+---
+
+<main class="comic-grid-section">
+    <h2>Últimas Actualizaciones y Paneles</h2> 
+
+    <div class="comic-grid">
+        
+        {% for post in site.posts %}
+        <article class="comic-panel" id="panel-{{ forloop.index }}">
+            <a href="{{ post.url }}" class="panel-link"> 
+                <img src="{{ site.baseurl }}/img/{{ post.image }}" alt="{{ post.title }}" class="panel-image">
+                
+                <div class="panel-overlay">
+                    <h3>{{ post.title }}</h3> 
+                    <button class="read-more-btn">Leer Más</button>
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+
+    </div>
+</main>
+
+<section id="sobre-nosotros" class="about-section">
+    <h2>Sobre el Proyecto y los Creadores</h2>
+    <p>Aquí puedes contar quién está detrás del cómic y el porqué del proyecto. Este texto es permanente.</p>
+</section>

@@ -1,0 +1,3 @@
+[build]
+  command = "bundle install && jekyll build"
+  publish = "_site"

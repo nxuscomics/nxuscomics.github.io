@@ -1,0 +1,15 @@
+title: NXUS COMIC
+description: Diario de desarrollo del cómic.
+url: "https://nxuscomics.github.io" 
+baseurl: "" 
+markdown: kramdown
+permalink: /:title/
+gems: 
+  - jekyll-feed
+  
+# Excluye archivos que no deben copiarse
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md

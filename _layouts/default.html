@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | NXUS COMIC</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <img src="{{ site.baseurl }}/img/banner-principal.jpg" alt="Banner principal del cómic" class="header-banner">
+        <h1>NXUS COMIC</h1>
+    </header>
+
+    <nav class="main-nav">
+        <div class="comic-selector">
+            <button class="selector-button">Seleccionar Serie/Autor ▼</button>
+            <div class="dropdown-content">
+                <a href="{{ site.baseurl }}/serie-uno.html">Serie 1: Mi Primer Cómic</a>
+                <a href="{{ site.baseurl }}/autor-colaborador.html">Autor 2: Nombre del Colaborador</a>
+            </div>
+        </div>
+        
+        <a href="{{ site.baseurl }}/#sobre-nosotros" class="about-link">Sobre Nosotros</a>
+    </nav>
+    
+    {{ content }} 
+
+    <footer class="main-footer">
+        <img src="{{ site.baseurl }}/img/banner-inferior.jpg" alt="Banner inferior de promoción" class="footer-banner">
+        <div class="footer-data">
+            <p>&copy; 2025 NXUS COMIC | Todos los derechos reservados.</p>
+            <p>Contacto: tuemail@ejemplo.com</p>
+        </div>
+    </footer>
+
+    <script src="{{ site.baseurl }}/script.js"></script>
+</body>
+</html>
